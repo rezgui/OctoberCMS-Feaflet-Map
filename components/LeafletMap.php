@@ -40,6 +40,12 @@ class LeafletMap extends ComponentBase
                 'description'       => 'Show defined text on the marker',
                 'default'           => 'Your marker description here',
                 'type'              => 'text'
+            ],
+             'scrollProtection' => [
+                'title'             => 'Disable controls',
+                'description'       => 'Disable maps controls like zoom by using scroll etc until visitor clicks on map',
+                'default'           => 'true',
+                'type'              => 'checkbox'
             ]
             
         ];

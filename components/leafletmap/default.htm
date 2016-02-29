@@ -1,11 +1,14 @@
-
 <script src="/plugins/redmarlin/leafletmap/assets/js/leaflet.js"></script>
 <script>
-  var map = L.map('leafmap').setView([{{ __SELF__.property('coords') }}], {{ __SELF__.property('zoom') }});
+  var map = L.map('leafmap',{ 
+   		scrollWheelZoom: {{__SELF__.property('scrollOn')  }},
+   	}).setView([{{ __SELF__.property('coords') }}], {{ __SELF__.property('zoom') }});
   L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
     maxZoom: 18
+
 }).addTo(map);
+map.once('focus', function() { map.scrollWheelZoom.enable(); });
   {% if __SELF__.property('markerCoords')  %}
   		var marker = L.marker([{{ __SELF__.property('markerCoords') }}]).addTo(map);
 		marker.bindPopup("{{ __SELF__.property('markerText') }}");
