@@ -41,7 +41,7 @@
                 ],
                 'scrollProtection' => [
                     'title'         => 'Désactivé le Zoom',
-                    'description'   => 'Désactivé les contrôles de la carte comme le zoom, jusqu'à ce que l'utilisateur click sur la carte .'
+                    'description'   => 'Désactivé les contrôles de la carte comme le zoom, jusqu\'à ce que l\'utilisateur click sur la carte.'
                 ]
 
             ]
