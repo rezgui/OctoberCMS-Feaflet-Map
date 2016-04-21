@@ -1,4 +1,4 @@
-/* required styles */
+/* required leaflet styles */
 
 .leaflet-map-pane,
 .leaflet-tile,
@@ -477,4 +477,5 @@
 	background: #fff;
 	border: 1px solid #666;
 	}
+/* Leaflet map size */
 #leafmap {height: 400px;}

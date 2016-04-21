@@ -1,2 +1,6 @@
 1.0.1:
     - Initialize plugin.
+1.0.2:
+    - updated js and css to leaflet 0.7.7
+    - localization (en, fr) by jimibi
+    - js script fixes by jimibi

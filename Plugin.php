@@ -7,8 +7,8 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name'        => 'Leaflet Map',
-            'description' => 'Show Location Map using LeafLet and OpenStreetMaps',
+            'name'        => 'redmarlin.leafletmap::lang.plugin.name',
+            'description' => 'redmarlin.leafletmap::lang.plugin.description',
             'author'      => 'RedMarlin',
             'icon'        => 'icon-globe'
         ];

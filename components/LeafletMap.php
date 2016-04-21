@@ -9,52 +9,48 @@ class LeafletMap extends ComponentBase
     public function componentDetails()
     {
         return [
-            'name'        => 'Leaflet Map',
-            'description' => 'Displays OpenstreetMap and lets you mark one location'
+            'name'        => 'redmarlin.leafletmap::lang.components.leafletmap.name',
+            'description' => 'redmarlin.leafletmap::lang.components.leafletmap.description'
         ];
     }
   	public function defineProperties()
     {
         return [
             'coords' => [
-                'title'             => 'Map Coordinates',
-                'description'		=> 'Map center latitude and longitude, comma separated',
+                'title'             => 'redmarlin.leafletmap::lang.components.leafletmap.coords.title',
+                'description'		=> 'redmarlin.leafletmap::lang.components.leafletmap.coords.name',
                 'type'              => 'string',
                 'default'			=> '51.505, -0.09'
             ],
             'zoom' => [
-                'title'             => 'Zoom',
+                'title'             => 'redmarlin.leafletmap::lang.components.leafletmap.zoom.title',
                 'type'              => 'string',
-                'description'		=> 'Zoom value from 0-18',
-                 'validationPattern' => '^[0-9]+$',
-                 'validationMessage' => 'The Zoom property can contain only numeric symbols',
-                 'default'			=> '12'
+                'description'		=> 'redmarlin.leafletmap::lang.components.leafletmap.zoom.description',
+                'validationPattern' => '^[0-9]+$',
+                'validationMessage' => 'redmarlin.leafletmap::lang.components.leafletmap.zoom.validationMessage',
+                'default'			=> '12'
             ],
             'markerCoords' => [
-                'title'             => 'Marker Coordinates',
-                'description'       => 'Marker Longitude and latitude comma separated. If left empty no marker will be shown',
+                'title'             => 'redmarlin.leafletmap::lang.components.leafletmap.markerCoords.title',
+                'description'       => 'redmarlin.leafletmap::lang.components.leafletmap.markerCoords.description',
                 'type'              => 'string',
             ],
             'markerText' => [
-                'title'             => 'Marker text',
-                'description'       => 'Show defined text on the marker',
-                'default'           => 'Your marker description here',
+                'title'             => 'redmarlin.leafletmap::lang.components.leafletmap.markerText.title',
+                'description'       => 'redmarlin.leafletmap::lang.components.leafletmap.markerText.description',
+                'default'           => 'redmarlin.leafletmap::lang.components.leafletmap.markerText.default',
                 'type'              => 'text'
             ],
-             'scrollProtection' => [
-                'title'             => 'Disable controls',
-                'description'       => 'Disable maps controls like zoom by using scroll etc until visitor clicks on map',
-                'default'           => 'true',
+            'scrollProtection' => [
+                'title'             => 'redmarlin.leafletmap::lang.components.leafletmap.scrollProtection.title',
+                'description'       => 'redmarlin.leafletmap::lang.components.leafletmap.scrollProtection.description',
                 'type'              => 'checkbox'
-            ]
-            
+            ]            
         ];
-  }
+    }
   	public function onRun()
   	{
     	$this->addCss('/plugins/redmarlin/leafletmap/assets/css/leaflet.css');
    	}
-
-
 
 }
