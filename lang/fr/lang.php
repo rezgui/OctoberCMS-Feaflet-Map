@@ -24,16 +24,6 @@
                     'title'       => 'Coordonnées du marqueur',
                     'description' => 'Longitude et latitude du marqueur séparé par une virgule. Si vide, pas de marqueur affiché',
                 ],
-                'width' => [
-                    'title'             => 'Largeur',
-                    'description'       => 'On peut utiliser px ou %',
-                    'validationMessage' => 'La propriété Width ne peut contenir que des nombres,% et px symbols'
-                ],
-                'height' => [
-                    'title'             => 'Hauteur',
-                    'description'       => 'On peut utiliser px ou %',
-                    'validationMessage' => 'La propriété Height ne peut contenir que des nombres,% et px symbols'
-                ],
                 'markerText' => [
                     'title'       => 'Texte du Marqueur',
                     'description' => 'Affiche le texte pré-défini sur le marqueur',

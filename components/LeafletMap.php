@@ -35,22 +35,6 @@ class LeafletMap extends ComponentBase
                 'description'       => 'redmarlin.leafletmap::lang.components.leafletmap.markerCoords.description',
                 'type'              => 'string',
             ],
-            'width' => [
-                'title'             => 'redmarlin.leafletmap::lang.components.leafletmap.width.title',
-                'description'       => 'redmarlin.leafletmap::lang.components.leafletmap.width.description',
-                'type'              => 'string',
-                'validationPattern' => '^[0-9,%,px]+$',
-                'validationMessage' => 'redmarlin.leafletmap::lang.components.leafletmap.width.validationmessage',
-                'default'           => '100%',
-            ],
-            'height' => [
-                'title'             => 'redmarlin.leafletmap::lang.components.leafletmap.height.title',
-                'description'       => 'redmarlin.leafletmap::lang.components.leafletmap.height.description',
-                'type'              => 'string',
-                'validationPattern' => '^[0-9,%,px]+$',
-                'validationMessage' => 'redmarlin.leafletmap::lang.components.leafletmap.height.validationmessage',
-                'default'           => '350px',
-            ],
             'markerText' => [
                 'title'             => 'redmarlin.leafletmap::lang.components.leafletmap.markerText.title',
                 'description'       => 'redmarlin.leafletmap::lang.components.leafletmap.markerText.description',
@@ -66,8 +50,7 @@ class LeafletMap extends ComponentBase
     }
   	public function onRun()
   	{
-    	$this->addCss('http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css');
-        $this->addCss('/plugins/redmarlin/leafletmap/assets/css/style.css');
+    	$this->addCss('/plugins/redmarlin/leafletmap/assets/css/leaflet.css');
    	}
 
 }

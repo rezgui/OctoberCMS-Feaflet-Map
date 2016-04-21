@@ -1,8 +1,6 @@
 1.0.1:
     - Initialize plugin.
 1.0.2:
-    - Correction link js
-    - div leafmap absente
-    - leaflet 0.7.7
-    - height and width params
-    - lang (en, fr)
+    - updated js and css to leaflet 0.7.7
+    - localization (en, fr) by jimibi
+    - js script fixes by jimibi
