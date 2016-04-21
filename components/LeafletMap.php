@@ -44,7 +44,8 @@ class LeafletMap extends ComponentBase
             'scrollProtection' => [
                 'title'             => 'redmarlin.leafletmap::lang.components.leafletmap.scrollProtection.title',
                 'description'       => 'redmarlin.leafletmap::lang.components.leafletmap.scrollProtection.description',
-                'type'              => 'checkbox'
+                'type'              => 'checkbox',
+                'default'           => '1'
             ]            
         ];
     }
