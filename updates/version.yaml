@@ -4,3 +4,4 @@
     - updated js and css to leaflet 0.7.7
     - localization (en, fr) by jimibi
     - js script fixes by jimibi
+    - added default value for ScrollProtection property
