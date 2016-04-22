@@ -30,8 +30,8 @@
                     'default'     => 'Your marker description here'
                 ],
                 'scrollProtection' => [
-                    'title'         => 'Controls Enabled',
-                    'description'   => 'Disable/Enable maps controls like zoom by using scroll etc until visitor clicks on map, if checked controls are enabled'
+                    'title'         => 'Map Controls',
+                    'description'   => 'Lets you control zoom behavior. You can disable map zoom by scroll with touchpad, mouse wheel etc. The zoom will be activated after clicking on the map'
                 ]
 
             ]
