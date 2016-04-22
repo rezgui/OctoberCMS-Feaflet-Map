@@ -31,7 +31,9 @@
                 ],
                 'scrollProtection' => [
                     'title'         => 'Map Controls',
-                    'description'   => 'Lets you control zoom behavior. You can disable map zoom by scroll with touchpad, mouse wheel etc. The zoom will be activated after clicking on the map'
+                    'description'   => 'Lets you control zoom behavior. You can disable map zoom by scroll with touchpad, mouse wheel etc. The zoom will be activated after clicking on the map',
+                    'controlson' => 'Controls Enabled',
+                    'controlsoff' => 'Controls Disabled'
                 ]
 
             ]

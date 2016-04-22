@@ -46,7 +46,7 @@ class LeafletMap extends ComponentBase
                 'description'       => 'redmarlin.leafletmap::lang.components.leafletmap.scrollProtection.description',
                 'default'           => 'false',
                 'type'              => 'dropdown',
-                'options'           => ["false" => "Zoom disabled","true" => "Zoom enabled"  ]
+                'options'           => ["false" => "redmarlin.leafletmap::lang.components.leafletmap.scrollProtection.controlson","true" => "redmarlin.leafletmap::lang.components.leafletmap.scrollProtection.controlsoff"  ]
             ]            
         ];
     }
