@@ -45,7 +45,7 @@ Zoom – initial map zoom level. Should be a number.
 Add the component to your page and configure it.
 Add it to your page following the code:
 ```
-<div id="leafletmap"></div>
+<div id="leafmap"></div>
 {% component 'LeafletMap' %}
 ```
 
@@ -54,7 +54,7 @@ To change this value or to move height definition to your theme edit css file:
 *plugins/redmarlin/leafletmap/assets/css/leaflet.css*
 At the end of the file you will have the following line:
 ```
-#leafletmap { height: 400px }
+#leafmap { height: 400px }
 ```
 Change the height value as you see fit or delete it from leaflet.css to move it to another file.
 
