@@ -1,3 +1,4 @@
+1.0.4: Load all resources over https
 1.0.3: ScrollProtection property fixes and better description
 1.0.2:
     - updated js and css to leaflet 0.7.7
