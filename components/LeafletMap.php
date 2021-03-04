@@ -39,7 +39,7 @@ class LeafletMap extends ComponentBase
                 'title'             => 'redmarlin.leafletmap::lang.components.leafletmap.markerText.title',
                 'description'       => 'redmarlin.leafletmap::lang.components.leafletmap.markerText.description',
                 'default'           => 'redmarlin.leafletmap::lang.components.leafletmap.markerText.default',
-                'type'              => 'text'
+                'type'              => 'string'
             ],
             'scrollProtection' => [
                 'title'             => 'redmarlin.leafletmap::lang.components.leafletmap.scrollProtection.title',
