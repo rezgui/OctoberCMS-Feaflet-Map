@@ -8,7 +8,7 @@
         ],
 
         'components' => [
-            'leafletmap' => [
+            'rezgui' => [
                 'name'        => 'Carte Leaflet',
                 'description' => 'Affiche OpenstreetMap et vous permet de marquer un emplacement',
                 'coords' => [
@@ -40,5 +40,3 @@
         ]
 
     ];
-
-?>

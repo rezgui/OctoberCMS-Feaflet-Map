@@ -1,6 +1,6 @@
 plugin:
-    name: 'redmarlin.leafletmap::lang.plugin.name'
-    description: 'redmarlin.leafletmap::lang.plugin.description'
-    author: RedMarlin
+    name: 'rezgui.leafletmap::lang.plugin.name'
+    description: 'rezgui.leafletmap::lang.plugin.description'
+    author: Yacine REZGUI
     icon: oc-icon-globe
-    homepage: 'http://redmarlin.net'
+    homepage: 'https://rezgui.net'

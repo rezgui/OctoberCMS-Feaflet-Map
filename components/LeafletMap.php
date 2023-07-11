@@ -1,4 +1,6 @@
-<?php namespace RedMarlin\LeafletMap\Components;
+<?php
+
+namespace Rezgui\LeafletMap\Components;
 
 use Cms\Classes\ComponentBase;
 use Flash;
@@ -9,53 +11,52 @@ class LeafletMap extends ComponentBase
     public function componentDetails()
     {
         return [
-            'name'        => 'redmarlin.leafletmap::lang.components.leafletmap.name',
-            'description' => 'redmarlin.leafletmap::lang.components.leafletmap.description'
+            'name'        => 'rezgui.leafletmap::lang.components.leafletmap.name',
+            'description' => 'rezgui.leafletmap::lang.components.leafletmap.description'
         ];
     }
-  	public function defineProperties()
+    public function defineProperties()
     {
         return [
             'coords' => [
-                'title'             => 'redmarlin.leafletmap::lang.components.leafletmap.coords.title',
-                'description'		=> 'redmarlin.leafletmap::lang.components.leafletmap.coords.name',
+                'title'             => 'rezgui.leafletmap::lang.components.leafletmap.coords.title',
+                'description'        => 'rezgui.leafletmap::lang.components.leafletmap.coords.name',
                 'type'              => 'string',
-                'default'			=> '51.505, -0.09'
+                'default'            => '51.505, -0.09'
             ],
             'zoom' => [
-                'title'             => 'redmarlin.leafletmap::lang.components.leafletmap.zoom.title',
+                'title'             => 'rezgui.leafletmap::lang.components.leafletmap.zoom.title',
                 'type'              => 'string',
-                'description'		=> 'redmarlin.leafletmap::lang.components.leafletmap.zoom.description',
+                'description'        => 'rezgui.leafletmap::lang.components.leafletmap.zoom.description',
                 'validationPattern' => '^[0-9]+$',
-                'validationMessage' => 'redmarlin.leafletmap::lang.components.leafletmap.zoom.validationMessage',
-                'default'			=> '12'
+                'validationMessage' => 'rezgui.leafletmap::lang.components.leafletmap.zoom.validationMessage',
+                'default'            => '12'
             ],
             'markerCoords' => [
-                'title'             => 'redmarlin.leafletmap::lang.components.leafletmap.markerCoords.title',
-                'description'       => 'redmarlin.leafletmap::lang.components.leafletmap.markerCoords.description',
+                'title'             => 'rezgui.leafletmap::lang.components.leafletmap.markerCoords.title',
+                'description'       => 'rezgui.leafletmap::lang.components.leafletmap.markerCoords.description',
                 'type'              => 'string',
             ],
             'markerText' => [
-                'title'             => 'redmarlin.leafletmap::lang.components.leafletmap.markerText.title',
-                'description'       => 'redmarlin.leafletmap::lang.components.leafletmap.markerText.description',
-                'default'           => 'redmarlin.leafletmap::lang.components.leafletmap.markerText.default',
+                'title'             => 'rezgui.leafletmap::lang.components.leafletmap.markerText.title',
+                'description'       => 'rezgui.leafletmap::lang.components.leafletmap.markerText.description',
+                'default'           => 'rezgui.leafletmap::lang.components.leafletmap.markerText.default',
                 'type'              => 'string'
             ],
             'scrollProtection' => [
-                'title'             => 'redmarlin.leafletmap::lang.components.leafletmap.scrollProtection.title',
-                'description'       => 'redmarlin.leafletmap::lang.components.leafletmap.scrollProtection.description',
+                'title'             => 'rezgui.leafletmap::lang.components.leafletmap.scrollProtection.title',
+                'description'       => 'rezgui.leafletmap::lang.components.leafletmap.scrollProtection.description',
                 'default'           => 'false',
                 'type'              => 'dropdown',
                 'options'           => [
-                                        "false" => "redmarlin.leafletmap::lang.components.leafletmap.scrollProtection.controlson",
-                                        "true" => "redmarlin.leafletmap::lang.components.leafletmap.scrollProtection.controlsoff" 
-                                        ]
-            ]            
+                    "false" => "rezgui.leafletmap::lang.components.leafletmap.scrollProtection.controlson",
+                    "true" => "rezgui.leafletmap::lang.components.leafletmap.scrollProtection.controlsoff"
+                ]
+            ]
         ];
     }
-  	public function onRun()
-  	{
-    	$this->addCss('/plugins/redmarlin/leafletmap/assets/css/leaflet.css');
-   	}
-
+    public function onRun()
+    {
+        $this->addCss('/plugins/rezgui/leafletmap/assets/css/leaflet.css');
+    }
 }

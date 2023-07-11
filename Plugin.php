@@ -1,4 +1,6 @@
-<?php namespace RedMarlin\Leafletmap;
+<?php
+
+namespace Rezgui\Leafletmap;
 
 use System\Classes\PluginBase;
 
@@ -7,17 +9,18 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name'        => 'redmarlin.leafletmap::lang.plugin.name',
-            'description' => 'redmarlin.leafletmap::lang.plugin.description',
-            'author'      => 'RedMarlin',
+            'name'        => 'rezgui.leafletmap::lang.plugin.name',
+            'description' => 'rezgui.leafletmap::lang.plugin.description',
+            'author'      => 'Rezgui',
             'icon'        => 'icon-globe'
         ];
     }
 
-    public function registerComponents(){
-    return [
-            'RedMarlin\LeafletMap\Components\LeafletMap' => 'LeafletMap',
-    ];
+    public function registerComponents()
+    {
+        return [
+            'Rezgui\LeafletMap\Components\LeafletMap' => 'LeafletMap',
+        ];
     }
 
     public function registerSettings()

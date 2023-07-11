@@ -8,7 +8,7 @@
         ],
 
         'components' => [
-            'leafletmap' => [
+            'rezgui' => [
                 'name'        => 'Leaflet Map',
                 'description' => 'Displays OpenstreetMap and lets you mark one location',
                 'coords' => [
@@ -40,5 +40,3 @@
         ]
 
     ];
-
-?>

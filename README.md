@@ -1,4 +1,5 @@
-Simple plugin for displaying map with marked location using [Leaflet.js](http://leafletjs.com) and OpenStreet Maps.
+# Simple plugin for displaying map with marked location using [Leaflet.js](http://leafletjs.com) and OpenStreet Maps.
+### Forked from RedMarlin/OctoberCMS-Feaflet-Map
 
 Alternative for those who don't want to or can't use Google Maps or other commercial products.
 
@@ -7,31 +8,31 @@ You can set map center,  zoom level,  point a marker on the screen and set marke
 The functionality is limited but allows you to quickly add a map with marker to any page.
 For most use cases this should be more than enough.
 
-###Features:###
-* Based on Leaflet 0.7.7
+## Features:
+* Based on Leaflet 1.9.4
 * You can customize map center, zoom, marker location and marker popup text
 * Only one marker possible at this time
 * All js, css and img files are included in the plugin
 * Zoom control, zoom by scroll can be disabled until clicked on the map
 
-###TODO LIST###
+## TODO LIST
 * Add other layers like Mapquest Open, cycle map, etc.
 
 For installation, usage and configuration instructions see Documentation.
 
 
-##Installation##
+### Installation
 
 Install the plugin directly from the marketplace 
 Go to October *Backend  Settings->Updates->Install Plugins*
-Type *RedMarlin.LeafletMap* and install the plugin
+Type **rezgui.LeafletMap** and install the plugin
 
-You can also download the plugin directly from the [Github](https://github.com/RedMarlin/OctoberCMS-Feaflet-Map).
-Unpack it to *plugins/redmalin/leafletmap* directory. Logout and login into the backend, and the plugin should be installed now.
+You can also download the plugin directly from the [Github](https://github.com/rezgui/OctoberCMS-Feaflet-Map).
+Unpack it to *plugins/rezgui/leafletmap* directory. Logout and login into the backend, and the plugin should be installed now.
 
 
 
-##Configuration#
+## Configuration
 LeafletMap component settings
 
 * **Latitude and Longitude** - Coordinates for the map center separated by coma ie. 50.002, -0.09. Check Get OSM Coordinates chapter to learn how to find your coordinates.
@@ -41,7 +42,7 @@ Zoom – initial map zoom level. Should be a number.
 * **Zoom Control** – Lets you control zoom behavior. By default the zooming feature by scroll/mouse wheel is disabled until visitor clicks on the map.
 
 
-##Usage##
+## Usage
 Add the component to your page and configure it.
 Add it to your page following the code:
 ```
@@ -58,14 +59,14 @@ At the end of the file you will have the following line:
 ```
 Change the height value as you see fit or delete it from leaflet.css to move it to another file.
 
-##Getting OSM coordinates and zoom settings##
+## Getting OSM coordinates and zoom settings
 To find your coordinates and desired zoom level go to [OSM page](https://www.openstreetmap.org)
 find desired location on the map (using search or just moving through the map with your mouse).
 Double click on the desired location on the map. 
 The map will center automatically on the selected location.
 Mouse scroll to set desired zoom level.
 When everything is set click on the Share icon on the right side of the screen.
-![img](http://redmarlin.net/octoberplugins/snapshot55.jpg)
+![img](./screenshot/snapshot55.jpg)
 In the Geo URI check this string:
 ```
 geo:41.6591,-4.7287?z=15
@@ -75,7 +76,7 @@ Alternatively you could just check the link bar of your browser:
 ```
 map=15/41.6591/-4.7287
 ```
-![img](http://redmarlin.net/octoberplugins/snapshot54.jpg)
+![img](./screenshot/snapshot54.jpg)
 The first number after *map=* string is zoom level (15), then you have latitude and longitude divided by "/".
 
 ##Contact##
